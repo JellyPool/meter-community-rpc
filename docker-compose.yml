@@ -1,7 +1,7 @@
 version: '3'
 services:
   api:
-    image: ghcr.io/nextblu/jelly-infrastructure-reverse-proxy:main
+    image: ghcr.io/jellypool/meter-community-rpc:main
     ports:
       - 80:80
     deploy:
