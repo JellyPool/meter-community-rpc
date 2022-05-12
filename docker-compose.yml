@@ -1,0 +1,9 @@
+version: '3'
+services:
+  api:
+    image: ghcr.io/nextblu/jelly-infrastructure-reverse-proxy:main
+    ports:
+      - 80:80
+    deploy:
+      placement:
+        constraints: [node.labels.identifier == proxy-eu]
